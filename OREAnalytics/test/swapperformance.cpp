@@ -68,7 +68,7 @@ using testsuite::TestMarket;
 
 BOOST_FIXTURE_TEST_SUITE(OREAnalyticsTestSuite, ore::test::OreaTopLevelFixture)
 
-BOOST_AUTO_TEST_SUITE(SwapPerformaceTest, *boost::unit_test::disabled())
+BOOST_AUTO_TEST_SUITE(SwapPerformanceTest)
 
 // Returns an int in the interval [min, max]. Inclusive.
 inline unsigned long randInt(MersenneTwisterUniformRng& rng, Size min, Size max) {

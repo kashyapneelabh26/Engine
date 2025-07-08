@@ -2,6 +2,7 @@
 
 set(OREAnalytics-Test_SRC aggregationscenariodata.cpp
 amcbermudanswaption.cpp
+basepath.cpp
 cube.cpp
 historicalscenariogenerator.cpp
 nettedexpsoure.cpp
@@ -27,7 +28,7 @@ swapperformance.cpp
 testmarket.cpp
 testportfolio.cpp
 testsuite.cpp
-cvatest.cpp)
+xvatest.cpp)
 
 add_executable(orea-test-suite ${OREAnalytics-Test_SRC})
 target_link_libraries(orea-test-suite ${QL_LIB_NAME})

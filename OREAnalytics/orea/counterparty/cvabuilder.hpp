@@ -5,7 +5,9 @@
 #include <ql/termstructures/defaulttermstructure.hpp>
 #include <ql/time/date.hpp>
 #include <ql/types.hpp>
+#include <ql/shared_ptr.hpp>
 #include <vector>
+#include <string>
 
 namespace ore {
 namespace analytics {

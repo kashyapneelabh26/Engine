@@ -33,6 +33,8 @@
 #include <ored/utilities/calendarparser.hpp>
 #include <ored/utilities/currencyparser.hpp>
 #include <ored/utilities/databuilders.hpp>
+#include <oret/datapaths.hpp> // needed for basePath
+
 
 using QuantExt::SavedObservableSettings;
 using QuantLib::IndexManager;
@@ -41,7 +43,7 @@ using QuantLib::SavedSettings;
 
 namespace ore {
 namespace test {
-
+extern std::string basePath;
 //! Top level fixture
 class TopLevelFixture {
 public:
@@ -51,7 +53,9 @@ public:
     /*! Constructor
         Add things here that you want to happen at the start of every test case
     */
-    TopLevelFixture() { ore::data::dataBuilders(); }
+    TopLevelFixture() { ore::data::dataBuilders(); 
+    basePath = "/Users/neelabhkashyap/Numeraxial-Quant-Risk/Engine/OREAnalytics/test";
+    }
 
     /*! Destructor
         Add things here that you want to happen after _every_ test case
@@ -74,3 +78,5 @@ public:
 };
 } // namespace test
 } // namespace ore
+
+

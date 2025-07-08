@@ -623,7 +623,7 @@ void test_performance(bool bigPortfolio, bool bigScenario, bool lotsOfSensis, bo
 
 BOOST_FIXTURE_TEST_SUITE(OREAnalyticsTestSuite, ore::test::OreaTopLevelFixture)
 
-BOOST_AUTO_TEST_SUITE(SensitivityPerformanceTest, *boost::unit_test::disabled())
+BOOST_AUTO_TEST_SUITE(SensitivityPerformanceTest)
 
 BOOST_AUTO_TEST_CASE(testSensiPerformanceNoneObs) {
     test_performance(false, false, false, false, ObservationMode::Mode::None);

@@ -5,6 +5,7 @@
 #include <ql/utilities/null.hpp>
 #include <algorithm>
 
+
 namespace ore {
 namespace analytics {
 
